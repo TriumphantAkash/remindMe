@@ -48,8 +48,8 @@ public class TodoItemsActivity extends ActionBarActivity implements GoogleApiCli
                 .build();
 
         txtOutput = (TextView)findViewById(R.id.txtOutput);
-        ActionBar bar = getActionBar();
-        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF6600")));
+//        ActionBar bar = getActionBar();
+//        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF6600")));
 
 //        Drawable d = ResourcesCompat.getDrawable(getResources(), R.drawable.actionbar_bg, null);
 //        getSupportActionBar().setBackgroundDrawable(d);
