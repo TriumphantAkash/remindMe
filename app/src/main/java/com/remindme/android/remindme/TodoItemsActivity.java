@@ -1,10 +1,12 @@
 package com.remindme.android.remindme;
 
+import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.ActionBarActivity;
@@ -35,6 +37,18 @@ public class TodoItemsActivity extends ActionBarActivity implements GoogleApiCli
     private TextView txtOutput;
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest mLocationRequest;
+
+    /**
+     * Sets the Action Bar for new Android versions.
+     */
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    private void actionBarSetup() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            ActionBar ab = getActionBar();
+            ab.setTitle("My Title");
+            ab.setSubtitle("sub-title");
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
