@@ -8,4 +8,14 @@
     <string name="title_activity_search_item">SearchItemActivity</string>
     <string name="title_activity_edit_item">EditItemActivity</string>
     <string name="title_activity_home">HomeActivity</string>
+
+    <!--items in the drop down-->
+    <string-array name="items_category">
+        <item>medicine</item>
+        <item>grocery</item>
+        <item>fruits/veg</item>
+        <item>electronics</item>
+        <item>food items</item>
+    </string-array>
+
 </resources>
