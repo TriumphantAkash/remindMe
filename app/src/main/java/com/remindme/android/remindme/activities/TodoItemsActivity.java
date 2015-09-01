@@ -1,4 +1,4 @@
-package com.remindme.android.remindme;
+package com.remindme.android.remindme.activities;
 
 import android.annotation.TargetApi;
 import android.app.ActionBar;
@@ -29,6 +29,7 @@ import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.remindme.android.remindme.R;
 
 
 public class TodoItemsActivity extends ActionBarActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener{

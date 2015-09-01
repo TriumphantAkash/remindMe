@@ -11,7 +11,7 @@
 
     <!--items in the drop down-->
     <string-array name="items_category">
-        <item> </item>
+        <item>select one...        </item>
         <item>medicine</item>
         <item>grocery</item>
         <item>fruits/veg</item>

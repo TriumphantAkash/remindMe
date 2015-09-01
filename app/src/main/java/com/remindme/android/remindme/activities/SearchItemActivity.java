@@ -1,23 +1,25 @@
-package com.remindme.android.remindme;
+package com.remindme.android.remindme.activities;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.remindme.android.remindme.R;
 
-public class EditItemActivity extends ActionBarActivity {
+
+public class SearchItemActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_item);
+        setContentView(R.layout.activity_search_item);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_edit_item, menu);
+        getMenuInflater().inflate(R.menu.menu_search_item, menu);
         return true;
     }
 

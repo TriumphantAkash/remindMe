@@ -1,4 +1,4 @@
-package com.remindme.android.remindme;
+package com.remindme.android.remindme.activities;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import com.remindme.android.remindme.R;
 
 
 public class AddItemActivity extends ActionBarActivity {
