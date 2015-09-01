@@ -107,14 +107,18 @@
             android:layout_weight="50"
             android:layout_height="match_parent"
             android:text="Submit"
-            android:id="@+id/button_add" />
+            android:id="@+id/button_add"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
 
         <Button
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="50"
             android:text="Clear"
-            android:id="@+id/button_clear" />
+            android:id="@+id/button_clear"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
 
 
 
