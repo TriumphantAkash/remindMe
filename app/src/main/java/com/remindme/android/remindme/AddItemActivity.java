@@ -4,14 +4,36 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class AddItemActivity extends ActionBarActivity {
 
+    Button addButton, clearButton;
+    EditText editItemName, editQuantity, editDescription;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item);
+
+        //Views initialization
+        addButton = (Button)findViewById(R.id.button_add);
+        clearButton = (Button)findViewById(R.id.button_clear);
+        editItemName = (EditText)findViewById(R.id.edit_item_name);
+        editQuantity = (EditText)findViewById(R.id.edit_quantity);
+        editDescription = (EditText)findViewById(R.id.edit_description);
+        //onclick Listeners for the buttons
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //clear the input data
+                editItemName.setText("");
+                editQuantity.setText("");
+                editDescription.setText("");
+            }
+        });
     }
 
     @Override

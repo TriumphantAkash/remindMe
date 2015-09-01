@@ -1,19 +1,54 @@
 package com.remindme.android.remindme;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class HomeActivity extends ActionBarActivity {
 
+    Button addButton, editButton, showButton;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //Views initialization
+        addButton = (Button)findViewById(R.id.button_add);
+        editButton = (Button)findViewById(R.id.button_edit);
+        showButton = (Button)findViewById(R.id.button_show);
+
+
+        //onclick listeners for Views
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), AddItemActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), EditItemActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        showButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), ShowItemsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
