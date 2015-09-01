@@ -7,12 +7,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 
 public class AddItemActivity extends ActionBarActivity {
 
     Button addButton, clearButton;
     EditText editItemName, editQuantity, editDescription;
+    Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,8 @@ public class AddItemActivity extends ActionBarActivity {
         editItemName = (EditText)findViewById(R.id.edit_item_name);
         editQuantity = (EditText)findViewById(R.id.edit_quantity);
         editDescription = (EditText)findViewById(R.id.edit_description);
+        spinner = (Spinner)findViewById(R.id.spinner);
+
         //onclick Listeners for the buttons
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +36,7 @@ public class AddItemActivity extends ActionBarActivity {
                 editItemName.setText("");
                 editQuantity.setText("");
                 editDescription.setText("");
+                spinner.setSelection(0);
             }
         });
     }
