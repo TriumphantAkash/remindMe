@@ -1,6 +1,6 @@
 # README #
 
-* remindMe is an Smart Android Application that keeps Track of your todo list pretty smartly
+* remindMe is a Smart Android Application that keeps Track of your todo list pretty smartly
 * One of the key features of the app is sending notification to the user if the user is near the todo work location.
 * App uses intensive hashing techniques to lookup the available todo item store locations
 
