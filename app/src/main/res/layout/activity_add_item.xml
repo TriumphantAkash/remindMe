@@ -1,0 +1,129 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.remindme.android.remindme.activities.AddItemActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/items">
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:text="Item Name"
+        android:id="@+id/item_name" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:id="@+id/edit_item_name"
+        android:hint="item..."
+        android:gravity="bottom"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:text="Categoty"
+        android:id="@+id/category" />
+
+    <Spinner
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/spinner"
+        android:entries="@array/items_category"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:text="Quantity"
+        android:layout_marginTop="30dp"
+        android:id="@+id/quantity" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:hint="number..."
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="bottom"
+        android:id="@+id/edit_quantity" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:text="Description"
+        android:layout_marginTop="30dp"
+        android:id="@+id/description" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:lines="1"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edit_description"
+        android:hint="description about the item..."/>
+
+</LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:id="@+id/button_add"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="Clear"
+            android:id="@+id/button_clear"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

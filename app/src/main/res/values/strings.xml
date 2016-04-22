@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RemindMe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <string name="title_activity_show_items">ShowItemsActivity</string>
+    <string name="title_activity_search_item">SearchItemActivity</string>
+    <string name="title_activity_edit_item">EditItemActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--items in the drop down-->
+    <string-array name="items_category">
+        <item>select one...        </item>
+        <item>medicine</item>
+        <item>grocery</item>
+        <item>fruits/veg</item>
+        <item>electronics</item>
+        <item>food items</item>
+    </string-array>
+
+</resources>
